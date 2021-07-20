@@ -1,1 +1,183 @@
+body{
+    width: 1340px;
+    font-family: 'Mukta', sans-serif;
+    background: #fff;
+}
+.title {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #070707;
+}
+p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    text-align: center;
+    color: #070707;
+}
 
+/* main menu */
+
+.menu-main {
+    list-style: none;
+    margin: 0 150px 30px 150px;
+    background: #fff;
+    border-bottom: 1px solid #828282;
+    padding: 30px 0 30px 0;
+}
+.menu-main li {
+    display: inline-block;
+    color: #070707;
+    margin: 0 70px 0 70px;
+}
+.menu-main a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    text-align: center;
+}
+@media (max-width: 550px) {
+    .menu-main {
+        padding-top: 0;
+    }
+    .menu-main li {
+        display: block;
+    }
+    .menu-main li:after {
+        content: none;
+    }
+    .menu-main a {
+        padding: 25px 0 20px; 
+        margin: 0 30px;
+    }
+}
+
+/* about me section */
+.about-me-section{
+    display: flex;
+    flex-direction: row; 
+}
+.about-me-info {
+    width: 60%;
+    margin-left: 150px;
+}
+.my-name {
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: bold;
+    color: #070707;
+}
+.my-specialty {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    text-align: left;
+    color: #070707;
+}
+.about-me-section img {
+    width: 40%;
+    margin-right: 150px;
+}
+
+/* about me */
+
+.about-me {
+    margin: 0 150px 0 150px;
+    background: #d1ecd7;
+    padding: 80px 0 80px 0;
+}
+
+/* Skills section */
+
+.skills-section {
+    padding: 80px 0 80px 0;
+    margin: 0 150px 0 150px;
+}
+.skills-list-img li {
+    padding: 20px 0 0 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #070707;
+    text-align: center;
+    width: 17%;
+}
+.skills-list-img img {
+    width: 90px;
+    height: 90px;
+}
+.skills-list {
+    padding: 60px 0 0 0;
+}
+.skills-list-name li {
+    padding: 0 0 0 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #070707;
+    text-align: center;
+    width: 17%;
+}
+.skills-list-progress li {
+    padding: 0 0 20px 15px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #070707;
+    text-align: center;
+    width: 17%;
+}
+
+/* My portfolio */
+
+.my-portfolio {
+    background: #d1ecd7;
+    margin: 0 150px 0 150px;
+    padding: 80px 0 80px 0;
+}
+
+/* My contact */
+
+.my-contact {
+    padding: 80px 0 80px 0;
+    margin: 0 150px 0 150px;
+}
+.my-contact button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #070707;
+    border-radius: 30px;
+}
+.my-contact-list, .my-contact-list-name {
+    margin-left: 192px;
+}
+.my-contact-list li {
+    display: inline-block;
+    padding: 50px 50px 0 50px;
+}
+.my-contact-list img {
+    width: 40px;
+    height: 40px;
+}
+.my-contact-list-name li {
+    display: inline-block;
+    padding: 0 43px 0 42px;
+}
+.my-contact-list-name li a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+}
