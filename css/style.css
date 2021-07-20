@@ -1,7 +1,7 @@
 body{
     width: 1340px;
     font-family: 'Mukta', sans-serif;
-    background: #fff;
+    background: rgb(206, 187, 250);
 }
 .title {
     font-size: 34px;
@@ -22,7 +22,7 @@ p {
 
 .menu-main {
     list-style: none;
-    margin: 0 150px 30px 150px;
+    margin: 0 150px 5px 150px;
     background: #fff;
     border-bottom: 1px solid #828282;
     padding: 30px 0 30px 0;
@@ -59,10 +59,12 @@ p {
 .about-me-section{
     display: flex;
     flex-direction: row; 
+    margin: 0px 150px 5px 150px;
+    background: #fff;
 }
 .about-me-info {
     width: 60%;
-    margin-left: 150px;
+    text-align: center;    
 }
 .my-name {
     font-size: 48px;
@@ -74,18 +76,16 @@ p {
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
-    text-align: left;
-    color: #070707;
+    color: #828282;
 }
 .about-me-section img {
     width: 40%;
-    margin-right: 150px;
 }
 
 /* about me */
 
 .about-me {
-    margin: 0 150px 0 150px;
+    margin: 0 150px 5px 150px;
     background: #d1ecd7;
     padding: 80px 0 80px 0;
 }
@@ -94,15 +94,12 @@ p {
 
 .skills-section {
     padding: 80px 0 80px 0;
-    margin: 0 150px 0 150px;
+    margin: 0 150px 5px 150px;
+    background: #fff;
 }
 .skills-list-img li {
     padding: 20px 0 0 15px;
     display: inline-block;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
-    color: #070707;
     text-align: center;
     width: 17%;
 }
@@ -119,17 +116,13 @@ p {
     font-size: 14px;
     line-height: 17px;
     font-weight: normal;
-    color: #070707;
+    color: #828282;
     text-align: center;
     width: 17%;
 }
 .skills-list-progress li {
     padding: 0 0 20px 15px;
     display: inline-block;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
-    color: #070707;
     text-align: center;
     width: 17%;
 }
@@ -138,15 +131,28 @@ p {
 
 .my-portfolio {
     background: #d1ecd7;
-    margin: 0 150px 0 150px;
+    margin: 0 150px 5px 150px;
     padding: 80px 0 80px 0;
+    text-align: center;
+}
+.my-portfolio img {
+    width: 1000px;
+    padding: 20px;
+}
+.my-portfolio a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
 }
 
 /* My contact */
 
 .my-contact {
     padding: 80px 0 80px 0;
-    margin: 0 150px 0 150px;
+    margin: 0 150px 5px 150px;
+    background: #fff;
 }
 .my-contact button {
     position: relative;
@@ -176,7 +182,7 @@ p {
 }
 .my-contact-list-name li a {
     text-decoration: none;
-    color: #070707;
+    color: #828282;
     font-size: 14px;
     line-height: 17px;
     font-weight: normal;
