@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
-  width: 1340px;
+  padding: 0px 55px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Mukta", sans-serif;
-  background: rgb(206, 187, 250);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(203, 247, 201);
 }
 .title {
   font-size: 34px;
@@ -20,19 +23,17 @@ p {
   color: #070707;
 }
 
+/* header */
+header {
+  margin-bottom: 5px;
+}
 /* main menu */
 
 .menu-main {
-  list-style: none;
-  margin: 0 150px 5px 150px;
+  display: flex;
+  justify-content: space-evenly;
   background: #fff;
-  border-bottom: 1px solid #828282;
-  padding: 30px 0 30px 0;
-}
-.menu-main li {
-  display: inline-block;
-  color: #070707;
-  margin: 0 70px 0 70px;
+  border: 1px #828282 solid;
 }
 .menu-main a {
   text-decoration: none;
@@ -40,18 +41,30 @@ p {
   line-height: 22px;
   color: #828282;
   text-align: center;
+  padding: 28px 50px;
+}
+.menu-main a:hover {
+  box-shadow: 0 0 3px #828282;
 }
 
 /* about me section */
 .about-me-section {
   display: flex;
   flex-direction: row;
-  margin: 0px 150px 5px 150px;
+  justify-content: space-between;
   background: #fff;
+  margin-bottom: 5px;
+  border: 1px #828282 solid;
+  background: rgb(203, 247, 201);
 }
 .about-me-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   text-align: center;
+  background: #fff;
 }
 .my-name {
   font-size: 48px;
@@ -72,106 +85,78 @@ p {
 /* about me */
 
 .about-me {
-  margin: 0 150px 5px 150px;
   background: #d1ecd7;
-  padding: 80px 0 80px 0;
+  padding: 30px 0;
+  margin-bottom: 5px;
+  border: 1px #828282 solid;
 }
 
 /* Skills section */
 
 .skills-section {
-  padding: 80px 0 80px 0;
-  margin: 0 150px 5px 150px;
+  padding: 30px 0;
   background: #fff;
+  margin-bottom: 5px;
+  border: 1px #828282 solid;
 }
-.skills-list-img li {
-  padding: 20px 0 0 15px;
-  display: inline-block;
-  text-align: center;
-  width: 17%;
+.skills-section-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
-.skills-list-img img {
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill img {
   width: 90px;
   height: 90px;
-}
-.skills-list {
-  padding: 60px 0 0 0;
-}
-.skills-list-name li {
-  padding: 0 0 0 15px;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: normal;
-  color: #828282;
-  text-align: center;
-  width: 17%;
-}
-.skills-list-progress li {
-  padding: 0 0 20px 15px;
-  display: inline-block;
-  text-align: center;
-  width: 17%;
 }
 
 /* My portfolio */
 
 .my-portfolio {
   background: #d1ecd7;
-  margin: 0 150px 5px 150px;
-  padding: 80px 0 80px 0;
+  padding: 30px 20px;
+  margin-bottom: 5px;
   text-align: center;
+  border: 1px #828282 solid;
 }
-.my-portfolio img {
-  width: 1000px;
-  padding: 20px;
-}
-.my-portfolio a {
-  text-decoration: none;
-  color: #070707;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: normal;
-}
+
+/* footer */
 
 /* My contact */
 
 .my-contact {
-  padding: 80px 0 80px 0;
-  margin: 0 150px 5px 150px;
+  padding: 30px 0 30px 0;
   background: #fff;
+  border: 1px #828282 solid;
 }
-.my-contact button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 180px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  background-color: #070707;
-  border-radius: 30px;
-}
-.my-contact-list,
-.my-contact-list-name {
-  margin-left: 192px;
-}
-.my-contact-list li {
-  display: inline-block;
-  padding: 50px 50px 0 50px;
+.my-contact-list {
+  display: flex;
+  justify-content: space-evenly;
 }
 .my-contact-list img {
   width: 40px;
   height: 40px;
 }
-.my-contact-list-name li {
-  display: inline-block;
-  padding: 0 43px 0 42px;
-}
-.my-contact-list-name li a {
+.my-contact-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: #828282;
   font-size: 14px;
   line-height: 17px;
   font-weight: normal;
+}
+
+/* button home */
+
+.home {
+  border-radius: 5px;
+  position: fixed;
+  bottom: 8px;
+  right: 4px;
 }
