@@ -1,127 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cards-sourse.css" />
     <title>My portfolio</title>
-</head>
-<body>
-    <header>
-        <ul class="menu-main">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  </head>
+  <body>
+    <header class="col-lg-12">
+      <div class="menu-main">
+        <a href="#">Home</a>
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
     <article>
-        <div class="about-me-section">
-            <div class="about-me-info">
-                <h1 class="my-name">Alexey <br>Mozolevskiy</h1>              
-                <p class="my-specialty">Junior Front-End developer</p>
+      <div class="about-me-section">
+        <div class="about-me-info">
+          <h1 class="my-name">Alexey <br />Mozolevskiy</h1>
+          <p class="my-specialty">Junior Front-End developer</p>
+        </div>
+        <img
+          src="img/IMG_20210523_083056.jpg"
+          alt="my-photo"
+          class="my-photo"
+        />
+      </div>
+      <div class="about-me" id="about-me">
+        <h2 class="title">About me</h2>
+        <p>
+          Hi. My name is Alexey - Junior Frontend developer. <br />
+          I am interested in website development.
+        </p>
+        <br />
+        <p>I take various training courses to improve my skills.</p>
+        <br />
+        <p>
+          I will be glad to take part in an interesting project <br />
+          and learn something new and interesting.
+        </p>
+      </div>
+      <div class="skills-section" id="skills">
+        <h2 class="title">Skills</h2>
+        <p>I work in such programs as</p>
+        <div class="skills-section-content">
+          <div class="skill">
+            <img src="img/icon/html5.png" alt="html5" />
+            <h4>HTML5</h4>
+            <progress max="100" value="90"></progress>
+          </div>
+          <div class="skill">
+            <img src="img/icon/css3.png" alt="css3" />
+            <h4>CSS3</h4>
+            <progress max="100" value="70"></progress>
+          </div>
+          <div class="skill">
+            <img src="img/icon/javascript.png" alt="javascript" />
+            <h4>JavaScript</h4>
+            <progress max="100" value="50"></progress>
+          </div>
+          <div class="skill">
+            <img src="img/icon/reactjs.png" alt="reactjs" />
+            <h4>React.js</h4>
+            <progress max="100" value="5"></progress>
+          </div>
+          <div class="skill">
+            <img src="img/icon/nodejs.png" alt="nodejs" />
+            <h4>Node.js</h4>
+            <progress max="100" value="5"></progress>
+          </div>
+        </div>
+      </div>
+      <div class="my-portfolio" id="portfolio">
+        <div class="my-portfolio-content">
+          <h2 class="title">Portfolio</h2>
+          <div class="container">
+            <div class="sidebar">
+              <div style="background: #007764">
+                <a href="https://alexeymozolevskiy.github.io/my_resume/">
+                  <h1>Project two</h1>
+                  <h3>HTML5, CSS3</h3>
+                </a>
+              </div>
+              <div style="background: #1e2939">
+                <a href="https://alexeymozolevskiy.github.io/PiedPiper/">
+                  <h1>Project one</h1>
+                  <h3>HTML5, CSS3</h3>
+                </a>
+              </div>
             </div>
-            <img src="img/IMG_20210523_083056.jpg" alt="my-photo" class="my-photo">
-        </div>
-        <div class="about-me"><a name="about-me"></a>
-            <h2 class="title">About me</h2>
-                <p>
-                        <p>Hi. My name is Alexey - Junior Frontend developer. <br>
-                             I am interested in website development.</p>
-                        <br>
-                        <p>I take various training courses to improve my skills.</p>
-                        <br>
-                        <p>I will be glad to take part in an interesting project <br>
-                            and learn something new and interesting.</p>
-                </p>
-        </div>
-        <div class="skills-section"><a name="skills"></a>
-            <div class="skills-section-content">
-                <h2 class="title">Skills</h2>
-            <p>I work in such programs as</p>
-            <ul class="skills-list-img">
-                <li>
-                    <img src="img/icon/html5.png" alt="html5">                  
-                </li>
-                <li>
-                    <img src="img/icon/css3.png" alt="css3">
-                </li>
-                <li>
-                    <img src="img/icon/javascript.png" alt="javascript">
-                </li>
-                <li>
-                    <img src="img/icon/reactjs.png" alt="reactjs">
-                </li>
-                <li>
-                    <img src="img/icon/nodejs.png" alt="nodejs">
-                </li>
-            </ul>
-            <ul class="skills-list-name">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-            </ul>
-            <ul class="skills-list-progress">
-                <li><progress max="100" value="90"></progress></li>
-                <li><progress max="100" value="70"></progress></li>
-                <li><progress max="100" value="50"></progress></li>
-                <li><progress max="100" value="5"></progress></li>
-                <li><progress max="100" value="5"></progress></li>
-            </ul>
+            <div class="main-slide">
+              <div
+                style="background-image: url('img/project/Project1.jpg')"
+              ></div>
+              <div
+                style="background-image: url('img/project/Project2.jpg')"
+              ></div>
             </div>
-        </div>
-        <div class="my-portfolio"><a name="portfolio"></a>
-            <div class="my-portfolio-content">
-                <h2 class="title">Portfolio</h2>
-                <div>
-                    <a href="https://alexeymozolevskiy.github.io/my_resume/">Project one(HTML5, CSS3)</a>
-                    <img src="img/project/Project1.jpg" alt="project_1">
-                </div>
-                <div>
-                    <a href="https://alexeymozolevskiy.github.io/PiedPiper/">Project two(HTML5, CSS3)</a>
-                    <img src="img/project/Project2.jpg" alt="project_two">
-                </div>
+            <div class="controls">
+              <button class="down-button">
+                <i class="fas fa-arrow-down">&#9660;</i>
+              </button>
+              <button class="up-button">
+                <i class="fas fa-arrow-up">&#9650;</i>
+              </button>
             </div>
+          </div>
         </div>
-        <div class="my-contact"><a name="contact"></a>
-            <div class="my-contact-content">
-                <h2 class="title">Contact</h2>
-                <p>Want to know more or just chat? <br>
-                You are welcome!</p>
-                <a href="mailto:amozolevskiy88@gmail.com" target="_blank"><button >Send message</button></a>
-                <ul class="my-contact-list">
-                    <li>
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/aleksey-mozolevskiy-1426b1212/" target="_blank"><img src="img/icon/linkedin.png" alt="linkedin"></a>
-                    </li>
-                    <li>
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/alex_stal919/" target="_blank"><img src="img/icon/instagram.png" alt="instagram"></a>
-                    </li>
-                    <li>
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/AlexStal919/" target="_blank"><img src="img/icon/facebook.png" alt="facebook"></a>
-                    </li>
-                    <li>
-                        <!-- Gmail -->
-                        <a href="https://vk.com/lexa_mozolevskiy" target="_blank"><img src="img/icon/vk-com.png" alt="vkontakte"></a>
-                    </li>
-                </ul>
-                    <ul class="my-contact-list-name">
-                    <li><a href="https://www.linkedin.com/in/aleksey-mozolevskiy-1426b1212/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/alex_stal919/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/AlexStal919/" target="_blank">Facebook</a></li>
-                    <li><a href="https://vk.com/lexa_mozolevskiy" target="_blank">Vkontakte</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </article>
-</body>
+    <footer>
+      <div class="my-contact" id="contact">
+        <div class="my-contact-content">
+          <h2 class="title">Contact</h2>
+          <p>
+            Want to know more or just chat? <br />
+            You are welcome!
+          </p>
+          <div class="my-contact-list">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/aleksey-mozolevskiy-1426b1212/"
+              target="_blank"
+              ><img src="img/icon/linkedin.png" alt="linkedin" />LinkedIn</a
+            >
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/alex_stal919/" target="_blank"
+              ><img src="img/icon/instagram.png" alt="instagram" />Instagram</a
+            >
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/AlexStal919/" target="_blank"
+              ><img src="img/icon/facebook.png" alt="facebook" />Facebook</a
+            >
+            <!-- Vkontakte -->
+            <a href="mailto:amozolevskiy88@gmail.com" target="_blank"
+              ><img src="img/icon/gmail.png" alt="gmail" />Gmail</a
+            >
+          </div>
+        </div>
+      </div>
+      <a href="#">
+        <button class="home">
+          <i class="fas fa-arrow-down">&#9650;</i>
+        </button>
+      </a>
+    </footer>
+    <script src="scripts/cards-sourse.js"></script>
+  </body>
 </html>
