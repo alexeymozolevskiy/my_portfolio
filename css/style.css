@@ -25,17 +25,19 @@ p {
 
 /* header */
 header {
-  margin-bottom: 5px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
-/* main menu */
 
-.menu-main {
+.menu-top {
   display: flex;
   justify-content: space-evenly;
   background: #fff;
-  border: 1px #828282 solid;
 }
-.menu-main a {
+.menu-top a {
   text-decoration: none;
   font-size: 18px;
   line-height: 22px;
@@ -43,7 +45,7 @@ header {
   text-align: center;
   padding: 28px 50px;
 }
-.menu-main a:hover {
+.menu-top a:hover {
   box-shadow: 0 0 3px #828282;
 }
 
@@ -53,8 +55,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
-  margin-bottom: 5px;
-  border: 1px #828282 solid;
   background: rgb(203, 247, 201);
 }
 .about-me-info {
@@ -87,8 +87,6 @@ header {
 .about-me {
   background: #d1ecd7;
   padding: 30px 0;
-  margin-bottom: 5px;
-  border: 1px #828282 solid;
 }
 
 /* Skills section */
@@ -96,8 +94,6 @@ header {
 .skills-section {
   padding: 30px 0;
   background: #fff;
-  margin-bottom: 5px;
-  border: 1px #828282 solid;
 }
 .skills-section-content {
   display: flex;
@@ -119,9 +115,7 @@ header {
 .my-portfolio {
   background: #d1ecd7;
   padding: 30px 20px;
-  margin-bottom: 5px;
   text-align: center;
-  border: 1px #828282 solid;
 }
 
 /* footer */
@@ -131,7 +125,6 @@ header {
 .my-contact {
   padding: 30px 0 30px 0;
   background: #fff;
-  border: 1px #828282 solid;
 }
 .my-contact-list {
   display: flex;
@@ -155,6 +148,7 @@ header {
 /* button home */
 
 .home {
+  border: 1px solid #828282;
   border-radius: 5px;
   position: fixed;
   bottom: 8px;

@@ -23,6 +23,7 @@
   top: 0;
   left: 0;
   transition: transform 0.5s ease-in-out;
+  margin-right: 1px;
 }
 
 .sidebar > div {
@@ -41,6 +42,7 @@
   left: 25%;
   width: 75%;
   transition: transform 0.5s ease-in-out;
+  margin-left: 1px;
 }
 
 .main-slide > div {
@@ -72,17 +74,19 @@ button:focus {
   position: absolute;
   left: 25%;
   top: 50%;
-  z-index: 100;
+  z-index: 50;
 }
 
 .container .controls .down-button {
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  margin-right: 1px;
 }
 
 .container .controls .up-button {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-left: 1px;
 }
