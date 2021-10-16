@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/cards-sourse.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -21,31 +22,24 @@
     <title>My portfolio</title>
   </head>
   <body>
-    <header class="col-lg-12">
-      <nav>
-        <div class="menu-top">
-          <a href="#">Home</a>
-          <a href="#about-me">About me</a>
-          <a href="#skills">Skills</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <header>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#about-me">About me</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </header>
     <article>
-      <div class="header"></div>
-      <div class="about-me-section">
-        <div class="about-me-info">
+      <div class="about-me-section col-lg-12 col-md-12 col-xs-6">
+        <div class="about-me-info col-lg-6 col-md-6 col-xs-6">
           <h1 class="my-name">Alexey <br />Mozolevskiy</h1>
           <p class="my-specialty">Junior Front-End developer</p>
         </div>
-        <img
-          src="img/IMG_20210523_083056.jpg"
-          alt="my-photo"
-          class="my-photo"
-        />
+        <img src="img/my-photo.jpg" alt="my-photo" class="my-photo" />
       </div>
-      <div class="about-me" id="about-me">
+      <div class="about-me col-lg-12 col-md-12 col-xs-6" id="about-me">
         <h2 class="title">About me</h2>
         <p>
           Hi. My name is Alexey - Junior Frontend developer. <br />
@@ -59,7 +53,7 @@
           and learn something new and interesting.
         </p>
       </div>
-      <div class="skills-section" id="skills">
+      <div class="skills-section col-lg-12 col-md-12 col-xs-6" id="skills">
         <h2 class="title">Skills</h2>
         <p>I work in such programs as</p>
         <div class="skills-section-content">
@@ -90,18 +84,28 @@
           </div>
         </div>
       </div>
-      <div class="my-portfolio" id="portfolio">
+      <div class="my-portfolio col-lg-12 col-md-12 col-xs-6" id="portfolio">
         <div class="my-portfolio-content">
           <h2 class="title">Portfolio</h2>
           <div class="container">
             <div class="sidebar">
+              <div>
+                <a
+                  href="https://alexeymozolevskiy.github.io/Project-Bootstrap/"
+                  target="_blank"
+                  style="color: #000"
+                >
+                  <h3>Project three</h3>
+                  <h6>HTML5(bootstrap), CSS3</h6>
+                </a>
+              </div>
               <div style="background: #007764">
                 <a
                   href="https://alexeymozolevskiy.github.io/PiedPiper/"
                   target="_blank"
                 >
-                  <h1>Project two</h1>
-                  <h3>HTML5, CSS3</h3>
+                  <h3>Project two</h3>
+                  <h6>HTML5, CSS3</h6>
                 </a>
               </div>
               <div style="background: #1e2939">
@@ -109,8 +113,8 @@
                   href="https://alexeymozolevskiy.github.io/my_resume/"
                   target="_blank"
                 >
-                  <h1>Project one</h1>
-                  <h3>HTML5, CSS3</h3>
+                  <h3>Project one</h3>
+                  <h6>HTML5, CSS3</h6>
                 </a>
               </div>
             </div>
@@ -120,6 +124,9 @@
               ></div>
               <div
                 style="background-image: url('img/project/Project2.jpg')"
+              ></div>
+              <div
+                style="background-image: url('img/project/Project3.jpg')"
               ></div>
             </div>
             <div class="controls">
@@ -134,7 +141,7 @@
         </div>
       </div>
     </article>
-    <footer>
+    <footer class="col-lg-12 col-md-12 col-xs-6">
       <div class="my-contact" id="contact">
         <div class="my-contact-content">
           <h2 class="title">Contact</h2>
