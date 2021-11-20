@@ -118,6 +118,8 @@ a.nav-link:hover {
   border: 1px solid #828282;
   border-radius: 5px;
   position: fixed;
-  bottom: 8px;
-  right: 4px;
+  bottom: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
 }

@@ -4,16 +4,16 @@
 .menu-top label.toggleMenu {
   display: none;
   cursor: pointer;
-  padding: 4px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  /* border: 1px solid #000; */
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .menu-top label.toggleMenu div {
-  width: 26px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
-  margin: 6px 0;
+  width: 30px;
+  height: 5px;
+  background: #000;
+  margin: 5px 0;
 }
 @media all and (max-width: 576px) {
   * {
@@ -21,11 +21,37 @@
     margin: 0px;
   }
   .menu-top {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .menu-top .list-menu {
+    display: none;
+  }
+  .menu-top label.toggleMenu {
+    display: block;
+    order: 1;
+  }
+  input.toggleMenu:checked ~ .list-menu {
+    display: flex;
     flex-direction: column;
   }
+
+  /* about-me */
+
   .about-me-section {
     flex-direction: column;
   }
+
+  /* skills */
+
+  .skills-section .skill {
+    margin: 2px;
+  }
+
+  /* portfolio */
+
   .my-portfolio {
     padding: 20px 5px;
   }

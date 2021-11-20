@@ -10,18 +10,25 @@
   margin: 0;
   padding: 0;
 }
-.container a,
-.container p {
+.container a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   color: #fff;
+}
+.container a:hover {
+  color: blue;
+}
+.container a.white-background {
+  color: #000;
+}
+.container a.white-background:hover {
+  color: blue;
 }
 .sidebar {
   height: 100%;
-  width: 15%;
+  width: 20%;
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 15%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -38,7 +45,7 @@
   position: absolute;
   top: 0;
   left: 35%;
-  width: 45%;
+  width: 55%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -69,7 +76,7 @@ button:focus {
   position: absolute;
   left: 35%;
   top: 50%;
-  z-index: 50;
+  /* z-index: 50; */
 }
 
 .container .controls .down-button {
